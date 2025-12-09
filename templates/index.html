@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GYM</title>
+
+    <!-- CSS from static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="viewcontainer">
+        <header>
+            <nav>
+                <h1 class="logo">THÉ GŸM</h1>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+                    <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="m-content">
+            <h1 class="m-heading"><span class="text-primary">Start Workout </span>With Us</h1>
+            <p class="m-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="m-btn">Join Us</a>
+        </main>
+    </div>
+
+    <!-- Section 2 - Trainers -->
+    <main class="third-content">
+        <div class="img">
+            <div class="imgin">
+                <h1><span class="text-primary">Join Us</span></h1>
+                <h1 class="rep-h">Today</h1>
+            </div>
+        </div>
+
+        <div class="teams">
+            <h1><span class="text-primary">Professional </span>Trainers</h1>
+            <ul>
+                <li>Muhammad Hamza (CEO)</li>
+                <li>Shahzain Saqib (Manager)</li>
+                <li>Mashkoor (Equipment Controller)</li>
+                <li>Muhammad (Ayan Adviser)</li>
+                <li>Adeeb Khan (Training Organizer)</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Membership -->
+    <section class="membership">
+        <h1><span class="text-primary">Our </span>Membership Plans</h1>
+        <div class="plans">
+
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="price">$20 / month</p>
+                <ul>
+                    <li>Access to Gym Floor</li>
+                    <li>Free Locker</li>
+                    <li>1 Personal Training Session</li>
+                </ul>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <div class="plan featured">
+                <h2>Standard</h2>
+                <p class="price">$40 / month</p>
+                <ul>
+                    <li>Access to Gym + Classes</li>
+                    <li>Free Water Bottle</li>
+                    <li>3 Personal Training Sessions</li>
+                </ul>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <div class="plan">
+                <h2>Premium</h2>
+                <p class="price">$60 / month</p>
+                <ul>
+                    <li>Unlimited Access</li>
+                    <li>Sauna & Steam Room</li>
+                    <li>5 Personal Training Sessions</li>
+                </ul>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <main>
+        <div class="four-content">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter Your Name">
+
+                    <label>Email</label>
+                    <input type="email">
+
+                    <label>Phone Number</label>
+                    <input type="number">
+
+                    <label>Your Message</label>
+                    <textarea cols="60" rows="5"></textarea>
+
+                    <a href="#" class="sbn">Submit</a>
+                </form>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>The Gym © 2025 All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

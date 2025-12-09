@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main hero section */
+.viewcontainer {
+    max-width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../static/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text color highlight */
+.text-primary {
+    color: #fe6601;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    border-bottom: 1px solid #fe6601;
+}
+
+nav .logo {
+    color: #fe6601;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #fe6601;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero content */
+#m-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#m-content .m-heading {
+    font-size: 50px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+#m-content .m-para {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#m-content .m-btn {
+    background-color: #fe6601;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#m-content .m-btn:hover {
+    background-color: #cb5100;
+}
+
+/* Section 3 - trainers */
+.third-content {
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+}
+
+.third-content .img {
+    width: 65%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/secgym.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-content .imgin {
+    border: 4px solid #fe6601;
+    padding: 20px 40px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.third-content .img h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.third-content .img .rep-h {
+    color: #fe6601;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+.third-content .teams {
+    width: 35%;
+    background-color: #111;
+    border-left: 4px solid #fe6601;
+    padding: 20px 10px;
+}
+
+.teams h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #fe6601;
+}
+
+.teams ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.teams ul li {
+    color: #fff;
+    padding: 12px 0;
+    border-bottom: 1px dotted #fe6601;
+    position: relative;
+}
+
+.teams ul li::before {
+    content: "\2022";
+    color: #fe6601;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.3em;
+}
+/*
+   MEMBERSHIP SECTION */
+.membership {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.membership h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #1c1c1c;
+    border: 2px solid #fe6601;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 280px;
+    transition: 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(254, 102, 1, 0.3);
+}
+
+.plan h2 {
+    color: #fe6601;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.plan .price {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.plan ul li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #fe6601;
+}
+
+.join-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #fe6601;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #cb5100;
+}
+
+/* Highlight the middle plan */
+.featured {
+    background-color: #fe6601;
+    color: #000;
+    transform: scale(1.05);
+    border: 3px solid #fff;
+}
+
+.featured h2,
+.featured .price,
+.featured ul li {
+    color: #000;
+}
+
+.featured .join-btn {
+    background-color: #000;
+    color: #fe6601;
+}
+
+.featured .join-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+                      /*Section 4 */
+
+.four-content{
+    display: flex;
+    max-width: 100vw;
+    height: 55vh;
+}
+
+.four-content h2{
+    margin-top:10px ;
+    text-align: center;
+    text-transform: uppercase;
+}
+.four-content .contact{
+    width: 50%;
+    height: 100%;
+    background-color: #fe6601;
+
+}
+
+.contact input,textarea{
+    display: block;
+    padding: 2px 20px;
+    margin: 4px 0px;
+    border-radius: 4px;
+    border: none;
+    width: 470px;
+    
+    
+}
+.contact label{
+    margin-top:3px ;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    width: 470px;
+    padding: 2px 20px;
+}
+.contact input,textarea,a{
+    margin-left:16px;
+
+}
+.contact a{
+    display: block;
+    width: 100px;
+    background-color: #fff;
+    margin: 0px auto;
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+}
+.contact a:hover{
+    background-color:rgb(19, 15, 15);
+    color:#fff;
+
+}
+.four-content .map {
+    width: 50%;
+    height:100%;
+}
+
+.four-content .map iframe{
+    width: 100%;
+    height:100%;
+
+}
+
+footer{
+    height: 36px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(12, 10, 10); 
+    color: #fff;
+    font-weight: 600;
+
+} 
